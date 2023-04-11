@@ -1,3 +1,179 @@
+getgenv().StartToggle = true
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Overseer Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OverseerHub"})
 
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v15,v16)local v17={};for v34=1, #v15 do v6(v17,v0(v4(v1(v2(v15,v34,v34 + 1 )),v1(v2(v16,1 + ((v34-1)% #v16) ,1 + ((v34-1)% #v16) + 1 )))%256 ));end return v5(v17);end getgenv().StartToggle=true;local v9=loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))();local v10=v9:MakeWindow({[v7("\134\185\49\142","\200\216\92\235\226")]=v7("\45\249\119\85\144\135\7\253\50\111\150\128","\98\143\18\39\227\226"),[v7("\212\216\117\120\32\226\117\73\245\196\124","\156\177\17\29\112\144\16\36")]=false,[v7("\141\226\158\41\7\65\122\40\183\228","\222\131\232\76\68\46\20\78")]=true,[v7("\118\244\171\11\61\32\20\164\89\255\160\31","\53\155\197\109\84\71\82\203")]=v7("\139\30\250\76\104\192\203\250\140\29\253","\196\104\159\62\27\165\174\136")});local v11=v10:MakeTab({[v7("\6\44\169\203","\72\77\196\174\118")]=v7("\136\132\51\247","\203\237\71\142"),[v7("\5\40\172\210","\76\75\195\188\39\85\161\81")]="rbxassetid://4483345998",[v7("\1\253\186\36\160\29\206\29\63\227\166","\81\143\223\73\201\104\163\82")]=false});local v12=v11:AddSection({[v7("\253\210\186\180","\179\179\215\209\23\51\98")]=v7("\3\63\6\182\60\47\46\58\11","\64\86\114\207\28\96")});v11:AddButton({[v7("\235\131\160\28","\165\226\205\121\180\17")]=v7("\166\101\92\213\199\87\90\211\137\116","\231\16\40\186"),[v7("\34\140\3\219\205\42\185\10","\97\237\111\183\175\75\218")]=function()local v18=game:GetService(v7("\3\224\69\87\26\72\120\55\234","\84\143\55\60\105\56\25"));local v19=game:GetService(v7("\15\230\101\117\163\121\174\41\230\113\74\190\117\189\60\228\112","\93\131\21\25\202\26\207"));local v20=game:GetService(v7("\235\190\80\94\222\160\66","\187\210\49\39"));local v21=v20.LocalPlayer;local v22=v19:WaitForChild(v7("\244\154\20\228\223","\145\236\113\138\171\206\51\167"));local v23=require(v19:WaitForChild(v7("\245\177\131\213\190\85\251","\129\195\226\188\208\48\137\146")));local v24=require(v21:WaitForChild(v7("\104\178\50\110\92\92\127\171\58","\56\222\83\23\57\46")):WaitForChild(v7("\115\6\241\187\60\43\122\6\251","\21\116\144\214\89\92")):WaitForChild(v7("\238\49\59\161\165\180","\139\71\94\207\209\199\30\233")));local v25=v18:WaitForChild(v7("\46\243\102\47\86\200\40\243\108","\76\150\31\77\58\169"));local v26=v18:WaitForChild(v7("\194\244\222\179\205\55\22","\160\149\170\199\161\82\101\129"));local v27=v18:WaitForChild(v7("\91\35\112\175\65\50\121\191","\40\83\21\204"));function GetBey()local v35=v25:FindFirstChild(v21.Name);if (v35 and v35.PrimaryPart) then return v35;end return false;end v26.ChildRemoved:Connect(function(v36)if (v36.Name==(v21.Name   .. v7("\97\228\119\233\22\73\74","\62\176\22\155\113\44"))) then wait();v22:FireServer(v7("\38\252\146\202\2\84\194\11\234\131\204","\100\157\230\190\110\49\150"));end end);v22:FireServer(v7("\94\56\159\35\219\198\213\115\46\142\37","\28\89\235\87\183\163\129"));v24.TrainerBattleResult=function()local v37=0;while true do if (v37==(0 -0)) then wait();v23.close();break;end end end;while wait(416.1 -(324 + 92) ) do local v38=GetBey();if v38 then while v38.Parent and wait()  do local v39=0 -0 ;local v40;while true do if (v39==(0 -0)) then v40=v25:FindFirstChild(v21.Name   .. v7("\230\20\181\48\222\37\160","\185\64\212\66") );pcall(function()v40:FindFirstChildOfClass(v7("\80\35\197\1\36\170\113\50","\24\86\168\96\74\197")).Health=0;end);break;end end end end end end});v11:AddLabel(v7("\102\160\34\44\180\240\20\150\45\49\171\251\70\229\60\44\253\237\64\170\56\99\186\236\93\171\44\42\179\249\26","\52\197\72\67\221\158"));local v13=v10:MakeTab({[v7("\43\255\241\161","\101\158\156\196\95\192\17")]=v7("\136\165\27\135\57\100\188\179\8","\201\193\109\226\87\16"),[v7("\19\112\192\11","\90\19\175\101\207\134")]="rbxassetid://4483345998",[v7("\36\76\27\8\13\87\25\113\16\9\29","\116\62\126\101\100\34")]=false});local v14=v10:MakeTab({[v7("\200\183\78\74","\134\214\35\47\37")]=v7("\118\161\220\200\97\75\80\187\221","\53\206\176\167\18\56"),[v7("\8\223\215\194","\65\188\184\172\162")]="rbxassetid://4483345998",[v7("\51\90\126\20\10\93\118\54\13\68\98","\99\40\27\121")]=false});local v12=v14:AddSection({[v7("\109\26\53\21","\35\123\88\112\203\86")]=v7("\129\60\71\8\97\160\167\38\70\71\93\157\142\10","\194\83\43\103\18\211")});v14:AddButton({[v7("\99\36\18\42","\45\69\127\79\82\199\174")]=v7("\250\189\10\76\51\56\201\182","\187\219\97\108\117\89"),[v7("\110\55\82\48\250\174\78\61","\45\86\62\92\152\207")]=function()print(v7("\205\152\204\123\207\135\152\39\140\216\136\42\156\220","\172\236\184\26"));print(v7("\91\89\90\113\81\79\89\52\2\28\12","\63\60\60\20"));print(v7("\177\234\64\79\171\240\64\2\255\190\17","\194\158\33\34"));print(v7("\255\40\33\217\229\57\40\154\177\120\118\138\188\104\116","\140\88\68\186"));print(v7("\9\1\224\16\227\19\154\82\68\179\75","\101\116\131\123\195\46\186"));print(v7("\49\217\199\144\4\221\206\144\17\215\196\198\21\149\216\196\17\193\216\144\25\219\200\220\5\209\206\144\19\199\210\195\4\212\199\144\0\218\220\213\2\155","\112\181\171\176"));print(v7("\156\141\117\220\186\158\117\193\186\203\59\202\161\203\61\196\163\142\117\192\187\132\32\194\189\203\37\202\188\133\33\214\245\141\58\215\245\159\61\192\166\142\117\214\161\138\33\214\249\203\44\202\160\203\54\196\187\203\32\214\176\203\52\203\172\203\38\203\188\155\60\203\178\203\38\209\180\159\117\195\186\153\117\220\186\158\39\133\167\138\59\206\251","\213\235\85\165"));v14:MakeNotification({[v7("\124\216\93\200","\50\185\48\173\197")]=v7("\205\34\13\16\71\214\222","\142\77\99\99\40\186\187"),[v7("\139\196\72\181\205\78\101","\200\171\38\193\168\32\17")]="Type /console or press f9 on your keyboard to check stats for necessary information",[v7("\234\117\114\115\228","\163\24\19\20\129\27\99")]="rbxassetid://4483345998",[v7("\236\235\226\52","\184\130\143\81\164\152\166\226")]=20 -15 });local v29=workspace.beyblades;local v30=game.Players.LocalPlayer;local v31=true;function stopSpam()v31=false;end function meteorSpam()while v31==true  do game:GetService(v7("\27\217\250\203\32\223\235\211\44\216\217\211\38\206\235\192\44","\73\188\138\167")):WaitForChild(v7("\81\219\125\194","\55\174\19\161\66\220")):InvokeServer(v7("\62\79\62\186\33","\77\36\87\214"),1681155662.6952205,1 + 0 );wait();end end local v32=v29:FindFirstChild(v30);if v32 then meteorSpam();else stopSpam();end end});v13:AddLabel(v7("\209\250\129\29\253\224\192\126\184\209\217\47\253\247\213\127\250\225\198\44\182","\152\148\161\95"));v13:AddButton({[v7("\232\82\168\206","\166\51\197\171\186\234")]=v7("\123\242\249\184\134\121\245\244\164\210\91\235\173\145\207\84\227\232\165","\58\135\141\215\166"),[v7("\155\214\26\37\170\223\8","\223\179\124\68")]=false,[v7("\205\177\248\202\242\169\237\187","\142\208\148\166\144\200")]=function()local v33=0 -0 ;while true do if (v33==(0 + 0)) then v9:MakeNotification({[v7("\202\51\83\21","\132\82\62\112\194\116\231")]=v7("\233\213\94\91\55\193\219","\175\188\48\63\94"),[v7("\57\59\252\219\133\255\14","\122\84\146\175\224\145")]=v7("\99\79\58\194\20\72\60\196\20\79\115\213\70\87\32\194\85\66\115\194\91\14\32\198\85\89\61\152\20\103\53\150\85\14\48\196\77\93\39\215\88\14\32\198\85\89\61\197\24\14\42\217\65\14\36\223\88\66\115\194\81\66\54\198\91\92\39\150\64\65\115\223\64\0","\52\46\83\182"),[v7("\27\194\171\81\25","\82\175\202\54\124\230\215")]="rbxassetid://4483345998",[v7("\125\209\59\38","\41\184\86\67\219\219\62\75")]=16 -11 });while true do local v41=0 + 0 ;local v42;while true do if ((1023 -(338 + 684))==v41) then wait();break;end if (v41==(0 -0)) then v42=workspace:WaitForChild(v7("\195\217\212\15\79\81\180","\160\171\173\124\59\48\216\152"));game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=v42.CFrame;v41=1 + 0 ;end end end break;end end end});v9:Init();
+
+
+local Tab = Window:MakeTab({
+	Name = "City",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "City Only"
+})
+
+Tab:AddButton({
+	Name = "Auto Grind",
+	Callback = function()
+        local Workspace = game:GetService("Workspace")
+        local ReplicatedStorage = game:GetService("ReplicatedStorage")
+        local Players = game:GetService("Players")
+
+
+        local Player = Players.LocalPlayer
+        local Event = ReplicatedStorage:WaitForChild("event")
+        local Trainer = require(ReplicatedStorage:WaitForChild("trainer"))
+        local Events = require(Player:WaitForChild("PlayerGui"):WaitForChild("framework"):WaitForChild("events"))
+
+
+        local Beys = Workspace:WaitForChild("beyblades")
+        local Battles = Workspace:WaitForChild("battles")
+        local Specials = Workspace:WaitForChild("specials")
+
+
+        function GetBey()
+            local Bey = Beys:FindFirstChild(Player.Name)
+            if Bey and Bey.PrimaryPart then
+                return Bey
+            end
+            return false
+        end
+
+
+        Battles.ChildRemoved:Connect(function(A_1)
+            if A_1.Name == Player.Name .. "_Target" then
+                wait()
+                Event:FireServer("BattleTower")
+            end
+        end)
+
+
+        Event:FireServer("BattleTower")
+
+
+        Events.TrainerBattleResult = function()
+            wait()
+            Trainer.close()
+        end
+
+
+        while wait(0.1) do
+            
+            local Bey = GetBey()
+            if Bey then
+                
+                while Bey.Parent and wait() do
+                    local Enemy = Beys:FindFirstChild(Player.Name .. "_Target")
+                        pcall(function()
+                            Enemy:FindFirstChildOfClass("Humanoid").Health = 0
+                        end)
+                    end
+                end
+            end
+    
+    end            
+})
+
+
+Tab:AddLabel("Rejoin Server to stop grinding.")
+
+local adventuretab = Window:MakeTab({
+	Name = "Adventure",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local TabColo = Window:MakeTab({
+	Name = "Colosseum",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = TabColo:AddSection({
+	Name = "Colosseum ONLY"
+})
+
+
+TabColo:AddButton({
+	Name = "Afk Farm",
+	Callback = function()
+
+        print('attack = 40000')
+        print('defense = 0')
+        print('stamina = 0')
+        print('special = 20000')
+        print('luck = 7000')
+        print('All the above stats include crystal power.')
+
+        print('If you do not have enough points for these stats, you can use any sniping stat for your rank.')
+        
+        TabColo:MakeNotification({
+            Name = "Console",
+            Content = "Type /console or press f9 on your keyboard to check stats for necessary information",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+
+        local Beys = workspace.beyblades
+
+        local plr = game.Players.LocalPlayer
+
+        local spamming = true
+
+        function stopSpam()
+            spamming = false
+        end
+
+        function meteorSpam()
+            while spamming == true do
+                game:GetService("ReplicatedStorage"):WaitForChild("func"):InvokeServer("skill",1681155662.6952205,1)
+            wait()
+            end
+        end
+
+
+        local playerArena = Beys:FindFirstChild(plr)
+
+        if playerArena then
+            meteorSpam()
+        else
+            stopSpam()
+        end
+
+  	end
+
+
+})
+
+adventuretab:AddLabel("In Beta! Expect bugs.")
+
+adventuretab:AddButton({
+	Name = "Auto Crystal Finder",
+	Default = false,
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Finding",
+            Content = "Wait for a crystal to spawn. If a crystal spawns, you will teleport to it.",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+        while true do
+        local crystal = workspace:WaitForChild("crystal") -- wait for the crystal part to be loaded in the Workspace
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = crystal.CFrame
+        wait()
+        end
+        
+
+	end
+})
+
+
+
+
+
+OrionLib:Init()
